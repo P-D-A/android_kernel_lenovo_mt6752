@@ -18,7 +18,7 @@
 # tested tc (best alternative): /home/rohantaneja/aarch64-linux-android-4.9/bin
 
 KERNEL_DIR=$PWD
-IMAGE=$KERNEL_DIR/arch/arm64/boot/Image
+IMAGE=$KERNEL_DIR/arch/arm64/boot/Image.gz-dtb
 BUILD_START=$(date +"%s")
 blue='\033[0;34m'
 cyan='\033[0;36m'
@@ -31,7 +31,7 @@ nocol='\033[0m'
 export ARCH=arm64
 export CONFIG_NO_ERROR_ON_MISMATCH=y
 export CROSS_COMPILE=aarch64-linux-android-
-export PATH=/home/rohantaneja/aarch64-linux-android-5.3/bin:$PATH
+export PATH=/home/rohantaneja/aarch64-linux-android-6.0/bin:$PATH
 #export CONFIG_DEBUG_SECTION_MISMATCH=y
 export KBUILD_BUILD_USER="rohantaneja"
 export KBUILD_BUILD_HOST="lenovo"
